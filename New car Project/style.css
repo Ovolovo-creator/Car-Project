@@ -1,0 +1,684 @@
+/* @import url('https://fonts.googleapis.com/css?family:Open+Sans&display:swap'); */
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+header {
+  height: 160vh;
+  width: 100%;
+  background: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.648),
+      rgba(21, 20, 20, 0.42)
+    ),
+    url(srt/images/welcome-hero/welcome-banner.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.header-nav {
+  height: 10%;
+  width: 100%;
+}
+.nav-space {
+  width: 100%;
+  height: 100%;
+  cursor: default;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navscroll {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.877);
+  color: white;
+  height: 14vh;
+  cursor: default;
+  box-shadow: 0 0 4px rgba(232, 211, 211, 0.34);
+  top: 0;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25%;
+  cursor: default;
+  /* box-shadow: 0 0 2px; */
+  height: 100%;
+}
+.logo h1 {
+  cursor: pointer;
+  font-size: 25px;
+}
+.arch-links a:hover {
+  color: rgb(124, 119, 219);
+
+  /* box-shadow:  0  0 5px; */
+  transition: 0.1s color ease-in-out;
+}
+.trans {
+  transform: scale(1.5);
+  transition: 0.6s transform ease-in-out;
+}
+.arch-links {
+  width: 60%;
+  justify-content: space-around;
+  height: 100%;
+  display: flex;
+  cursor: default;
+  align-items: center;
+}
+.none {
+  display: none;
+}
+.arch-links a {
+  transition: 0.2s color ease-in-out;
+  transition: 0.9s transform ease-in-out;
+}
+.header-article {
+  height: 53%;
+  width: 100%;
+  justify-content: end;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.arictle-h1 {
+  text-align: center;
+  font-size: 40px;
+  height: 30%;
+  justify-content: center;
+  display: flex;
+  /* background-color: blue; */
+  align-items: center;
+}
+.arictle-h3 {
+  width: 60%;
+  text-align: center;
+  height: 25%;
+  font-size: 20px;
+}
+.article-contact {
+  height: 25%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.a-contact {
+  width: 15%;
+  height: 50%;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  display: flex;
+  border-radius: 10px;
+  box-shadow: 0 0 3px rgba(255, 255, 255, 0.388);
+  background-color: rebeccapurple;
+  transition: 0.5s ease-in-out all;
+}
+.a-contact:hover {
+  transition: 0.2s ease-in-out all;
+  background-color: rgb(81, 10, 152);
+}
+.section02 {
+  height: 150vh;
+  background-color: rgba(213, 191, 191, 0.338);
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  width: 100%;
+}
+.section02-mail {
+  height: 25%;
+  width: 100%;
+}
+.section01-bus {
+  width: 90%;
+  height: 75%;
+  align-items: center;
+  justify-content: space-around;
+  display: flex;
+}
+.article-section02 {
+  width: 30%;
+  height: 75%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  /* justify-content: center; */
+  border: 0.1px dotted green;
+  border-radius: 10px;
+  transition: 0.5s ease-in-out all;
+}
+.article-section02:hover {
+  transition: 0.5s ease-in-out all;
+  background-color: rgba(0, 0, 255, 0.342);
+}
+.article-section02 i {
+  height: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-size: 70px;
+}
+.article-section02 h2 {
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.article-section02 h2 {
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.article-section02 p {
+  text-align: center;
+  font-size: 20px;
+}
+.section-newcars {
+  height: 140vh;
+  width: 100%;
+  background-color: rgb(247, 243, 243);
+  justify-content: end;
+  display: flex;
+  flex-direction: column;
+}
+.section-newcars-header {
+  width: 100%;
+  height: 15%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+.section-newcars-header h3 {
+  font-size: 18px;
+  font-weight: 100;
+}
+.section-newcars-header h1 {
+  font-size: 40px;
+  font-weight: 600;
+  height: 60%;
+  display: flex;
+  align-items: center;
+}
+.necars-hr {
+  width: 10%;
+  height: 3%;
+  background-color: rgba(0, 0, 255, 0.397);
+}
+.section-newcars-div {
+  width: 100%;
+  height: 60%;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+.section-newcars01 {
+  width: 65%;
+  height: 90%;
+  background: url(srt/images/new-cars-model/ncm2.png);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.section-newcars02 {
+  width: 35%;
+  height: 90%;
+  display: flex;
+  /* justify-content: space-around; */
+  flex-direction: column;
+}
+.section-newcars02-header {
+  width: 100%;
+  height: 25%;
+  align-items: center;
+  display: flex;
+  font-size: 30px;
+}
+.section-newcars02-par-1 {
+  height: 30%;
+  width: 90%;
+}
+.section-newcars02-par-2 {
+  height: 30%;
+  width: 90%;
+}
+.section-newcars-radio {
+  height: 5%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 6%;
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+}
+.newcars-div a {
+  width: 35%;
+  height: 12%;
+  border-radius: 10px;
+  display: flex;
+  font-size: 18px;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 2px;
+  text-transform: capitalize;
+  background-color: purple;
+  transition: 0.5s all ease-in-out;
+}
+.newcars-div a:hover {
+  background-color: rgb(79, 44, 79);
+  transition: 0.5s all ease-in-out;
+}
+.arrow {
+  height: 20vh;
+  font-size: 30px;
+  position: absolute;
+  bottom: 0;
+  justify-content: right;
+  display: flex;
+  width: 99%;
+  align-items: center;
+}
+.arrow i {
+  margin-right: 0;
+  position: fixed;
+  cursor: pointer;
+  width: 5%;
+  height: 10%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  bottom: 10px;
+  background-color: rgba(128, 0, 128, 0.402);
+  border-radius: 12px;
+  color: white;
+  animation: flow 2s infinite;
+}
+.arrow i:hover {
+  color: black;
+  background: transparent;
+  border: 1px solid;
+  transition: 1s all ease-in-out;
+  transform: scale(0.6);
+  animation: none 0s infinite;
+}
+@keyframes flow {
+  0% {
+    transform: scale(0.7);
+  }
+  50% {
+    transform: scale(0.5);
+    background-color: rgba(128, 0, 128, 0.539);
+  }
+  100% {
+    transform: scale(0.7);
+  }
+}
+.featured-cars {
+  height: 220vh;
+  width: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+.featured-cars-header {
+  height: 15%;
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.featured-cars-header h1 {
+  height: 30%;
+  display: flex;
+  align-items: center;
+}
+.section-featuredcars-div {
+  display: flex;
+  align-items: center;
+  height: 75%;
+  flex-direction: column;
+  width: 100%;
+}
+.featuredcars-1 {
+  display: flex;
+  width: 90%;
+  height: 50%;
+  align-items: center;
+  justify-content: space-around;
+}
+.featuredcars-cars {
+  width: 23%;
+  height: 97%;
+  /* border: 1px solid black; */
+}
+.fcars-class1 {
+  height: 60%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+}
+.facars-class2 {
+  height: 40%;
+  width: 100%;
+  justify-content: space-around;
+  display: flex;
+  flex-direction: column;
+}
+.fcars-class1img {
+  height: 85%;
+  width: 100%;
+  background: url(srt/images/featured-cars/fc1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  /* border-radius: 1px solid black; */
+}
+.fcars-class1text {
+  height: 15%;
+  width: 100%;
+  border-top: 1px solid;
+}
+.featuredcars-2 {
+  display: flex;
+  width: 90%;
+  height: 50%;
+  align-items: center;
+  justify-content: space-around;
+}
+.client-say {
+  height: 130vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(249, 246, 246);
+}
+.client-head {
+  height: 20%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.client-body {
+  height: 75%;
+  width: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.client {
+  width: 30%;
+  border-radius: 10px;
+  height: 80%;
+  border: 1px solid;
+}
+.client:hover {
+  background-color: rgba(0, 0, 255, 0.144);
+}
+
+.upper {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.clwhite {
+  color: white;
+}
+.decno {
+  text-decoration: none;
+}
+.selectno {
+  cursor: pointer;
+  -webkit-user-select: none;
+  user-select: none;
+}
+#honda,
+#bmw {
+  display: none;
+}
+#bmwimg {
+  width: 65%;
+  height: 90%;
+  background: url(srt/images/new-cars-model/ncm1.png);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#hondaimg {
+  width: 65%;
+  height: 90%;
+  background: url(srt/images/new-cars-model/ncm3.png);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.radio {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background-color: white;
+  cursor: pointer;
+  border: 1px solid #000;
+}
+.radio:active {
+  background-color: blue;
+}
+
+footer {
+  height: 100vh;
+  width: 100%;
+  background: rgba(37, 14, 209, 0.596);
+}
+.vh {
+  height: 14%;
+  width: 100%;
+}
+.footer-all {
+  height: 86%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.footer-1 {
+  height: 85%;
+  display: flex;
+  justify-content: space-between;
+  width: 93%;
+}
+.footer-2 {
+  color: #202063;
+  font-size: 17px;
+  font-weight: 400;
+  text-transform: capitalize;
+  height: 15%;
+  width: 93%;
+  border-top: 1px solid;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer-2 a {
+  color: #202063;
+  text-decoration: none;
+}
+.logo-div {
+  width: 24%;
+  height: 100%;
+}
+.about-div {
+  width: 20%;
+  height: 100%;
+}
+.about-links {
+  display: flex;
+  flex-direction: column;
+}
+.footer-head {
+  height: 20%;
+  color: white;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 900;
+}
+.about-links a {
+  color: white;
+  text-decoration: none;
+}
+.top-brands {
+  width: 35%;
+  height: 100%;
+}
+.news-letter {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.news-letter-play {
+  height: 70%;
+  width: 100%;
+}
+.news-letter-play p {
+  color: white;
+  height: 25%;
+}
+#new-int {
+  background-color: transparent;
+  outline-color: transparent;
+  border: none;
+  width: 90%;
+  height: 100%;
+}
+.news-letter-play i {
+  color: white;
+  cursor: pointer;
+}
+.news-input {
+  height: 15%;
+  border-radius: 5px;
+  width: 100%;
+  color: white;
+  background: rgba(49, 37, 134, 0.596);
+  box-shadow: 0 0 9px rgba(255, 255, 255, 0.333);
+}
+.new-int:active {
+  outline-color: none;
+}
+#new-int::placeholder {
+  padding-left: 20px;
+}
+.oovv {
+  font-size: 30px;
+  cursor: pointer;
+}
+#bmw1 {
+  background: url(srt/images/featured-cars/fc1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#bmw2 {
+  background: url(srt/images/featured-cars/fc2.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#bmw3 {
+  background: url(srt/images/featured-cars/fc3.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#bmw4 {
+  background: url(srt/images/featured-cars/fc4.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#bmw5 {
+  background: url(srt/images/featured-cars/fc5.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#bmw6 {
+  background: url(srt/images/featured-cars/fc6.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#bmw7 {
+  background: url(srt/images/featured-cars/fc7.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#bmw8 {
+  background: url(srt/images/featured-cars/fc8.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.final-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 50vh;
+  background-color: white;
+}
+.finalimg {
+  width: 15%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  background: url(srt/images/brand/br1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#finalimg1 {
+  background: url(srt/images/brand/br1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#finalimg2 {
+  background: url(srt/images/brand/br2.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#finalimg3 {
+  background: url(srt/images/brand/br3.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#finalimg4 {
+  background: url(srt/images/brand/br4.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#finalimg5 {
+  background: url(srt/images/brand/br5.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#finalimg6 {
+  background: url(srt/images/brand/br6.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
